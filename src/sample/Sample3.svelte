@@ -1,0 +1,1 @@
+<quote>This is Sample 3.</quote>

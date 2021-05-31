@@ -1,0 +1,128 @@
+:root {
+	--primary: #ff3300;
+	--primary-dark: #e02d00;
+	--primary-light: #ff5c33;
+	--white: #ffffff;
+	--black: #000000;
+	--main-black: #1d1d1d;
+}
+
+html,
+body {
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+}
+
+body {
+	color: var(--white);
+	margin: 0;
+	padding: 1rem;
+	box-sizing: border-box;
+	background-color: var(--main-black);
+	background-image: url('./images/Svelte-draw-translucent.png');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	color: rgb(0, 100, 200);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+	color: rgb(0, 80, 160);
+}
+
+label {
+	display: block;
+}
+
+input,
+button,
+select,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+}
+
+input:disabled {
+	color: #ccc;
+}
+
+button {
+	font-family: inherit;
+	outline: none;
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 0.5rem 1.5rem;
+	background-color: var(--primary);
+	color: var(--white);
+}
+
+button:hover,
+button:active {
+	background-color: var(--primary-dark);
+}
+
+button:disabled {
+	background-color: var(--primary-light);
+	color: #bbb;
+	cursor: initial;
+}
+
+button:focus {
+	border-color: #666;
+}
+
+button.no-btn {
+	border: 0;
+	border-radius: 0;
+	background: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+
+/* Generic spacing classes */
+.vertical-spacing-1 > * + * {
+	margin-top: 1rem;
+}
+
+.vertical-spacing-2 > * + * {
+	margin-top: 2rem;
+}
+
+.horizontal-spacing-1 > * + * {
+	margin-left: 1rem;
+}
+
+.horizontal-spacing-2 > * + * {
+	margin-left: 2rem;
+}
+
+.highlight {
+	background-color: coral;
+	color: white;
+	padding: 0.2rem;
+}
